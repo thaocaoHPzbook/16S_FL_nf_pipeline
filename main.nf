@@ -56,7 +56,6 @@ def helpMessage() {
                          (default: null)
   --dada2_cpu    Number of threads for DADA2 denoising (default: 8)
   --vsearch_cpu    Number of threads for VSEARCH taxonomy classification (default: 8)
-  --cutadapt_cpu    Number of threads for primer removal using cutadapt (default: 16)
   --outdir    Output directory name (default: "results")
   --vsearch_db	Location of VSEARCH database (e.g. silva-138-99-seqs.qza can be
                 downloaded from QIIME database)
@@ -64,9 +63,7 @@ def helpMessage() {
                    downloaded from QIIME database)
   --silva_db   Location of Silva 138 database for taxonomy classification 
   --gtdb_db    Location of GTDB r202 for taxonomy classification
-  --refseq_db    Location of RefSeq+RDP database for taxonomy classification
-  --skip_primer_trim    Skip all primers trimming (switch off cutadapt and DADA2 primers
-                        removal) (default: trim with cutadapt)
+  --refseq_db  Location of RefSeq+RDP database for taxonomy classification
   --skip_nb    Skip Naive-Bayes classification (only uses VSEARCH) (default: false)
   --colorby    Columns in metadata TSV file to use for coloring the MDS plot
                in HTML report (default: condition)
